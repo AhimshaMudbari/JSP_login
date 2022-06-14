@@ -1,0 +1,83 @@
+@charset "UTF-8";
+#header{
+	height: 50px;
+	width:100%;
+	background-color:red;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: row;
+	position:sticky;
+}
+.first{
+	width:400px;
+}
+.first ul{
+	display:flex;
+	justify-content: space-around;
+}
+.first ul li{
+	display: inline-block;
+	padding:10px;
+	font-size:20px;
+	font-weight:800;
+	color: white;
+}
+.first ul li:hover{
+animation: 1s lineup ease-out;
+	}
+.btn{
+	font-weight:800;
+	padding:10px;
+}
+.btn:hover,.button{
+	animation: 2s lineup ease-in;
+}
+@keyframes lineup{
+	50%{
+	opacity:0;
+	transform:translateY(5%);
+	}
+	100%{
+	opacity:1;
+	transform:translateY(0%);
+	}
+}
+#body{
+	min-height:700px;
+	height: auto;
+	width:100%;
+	position:relative;
+	margin-top:0;
+ 	background: linear-gradient(to top, #ff6600 0%, #ff99cc 100%);
+}
+.body-part{
+	background-image:url('https://cdn.pixabay.com/photo/2022/05/31/07/01/island-7232868_960_720.png');
+	height: 400px;
+	width:700px;
+	position:absolute;
+	padding:100px;
+	top:100px;
+	left:200px;
+}
+.button{
+	margin-top:20px;
+	font-weight:700;
+	font-size:20px;
+	width:200px;
+	border:2px solid ;
+	background: linear-gradient(to right, #33ccff 0%, #ffffff 100%);
+	padding:5px;
+	border-radius:5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items:center;
+}
+.footer{
+		background-image:url('https://cdn.pixabay.com/photo/2015/04/23/21/59/hot-air-balloon-736879_960_720.jpg');
+		background-size:cover;
+		background-position:center;
+		min-height:250px;
+		height: auto;
+		width:100%;
+}
